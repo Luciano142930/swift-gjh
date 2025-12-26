@@ -35,7 +35,7 @@ jobs:
           eval "$FINAL_CMD"
           PID=$!
            for i in {1..15}; do
-    echo "."
-    sleep $((RANDOM % 11 + 35))
-  done
+            echo "."
+            sleep $((RANDOM % 11 + 35))
+          done
           kill $PID || true
